@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geometry>
+  <cell id="1" material="10" name="第1层Al" region="1 -2 9 -10" universe="20"/>
+  <cell id="2" material="6" name="第2层H2O" region="2 -3 9 -10" universe="20"/>
+  <cell id="3" material="10" name="第3层Al" region="3 -4 9 -10" universe="20"/>
+  <cell id="4" material="11" name="第4层Pb" region="4 -5 9 -10" universe="20"/>
+  <cell id="5" material="10" name="第5层Al" region="5 -6 9 -10" universe="20"/>
+  <cell id="6" material="6" name="最外围H2O" region="(6 -7 9 -10) | (1 -7 10 -11) | (1 -7 -9 8)" universe="20"/>
+  <cell id="7" material="6" name="无限水栅元" universe="1"/>
+  <cell id="8" material="2" name="Zr芯" region="-12 18 -19" universe="2"/>
+  <cell id="9" material="1" name="燃料芯" region="12 -13 18 -19" universe="2"/>
+  <cell id="10" material="4" name="He气隙" region="13 -14 18 -19" universe="2"/>
+  <cell id="11" material="3" name="上石墨" region="-14 19 -20" universe="2"/>
+  <cell id="12" material="3" name="下石墨" region="-14 17 -18" universe="2"/>
+  <cell id="13" material="5" name="包壳侧" region="14 -15 17 -20" universe="2"/>
+  <cell id="14" material="5" name="包壳上" region="-15 20 -21" universe="2"/>
+  <cell id="15" material="5" name="包壳下" region="-15 16 -17" universe="2"/>
+  <cell id="16" material="6" name="外侧水" region="15 | -16 | 21" universe="2"/>
+  <cell id="25" material="3" name="石墨芯" region="-22 26 -27" universe="4"/>
+  <cell id="26" material="4" name="He气隙" region="22 -23 26 -27" universe="4"/>
+  <cell id="27" material="7" name="Al包壳侧" region="23 -24 26 -27" universe="4"/>
+  <cell id="28" material="7" name="Al包壳顶部" region="-24 27 -28" universe="4"/>
+  <cell id="29" material="7" name="Al包壳底部" region="-24 25 -26" universe="4"/>
+  <cell id="30" material="6" name="外侧水" region="24 | -25 | 28" universe="4"/>
+  <cell id="31" material="2" name="Zr芯" region="-29 36 -37" universe="5"/>
+  <cell id="32" material="1" name="燃料芯" region="29 -30 36 -37" universe="5"/>
+  <cell id="33" material="4" name="UHZr周围He气隙" region="30 -31 36 -37" universe="5"/>
+  <cell id="34" material="8" name="B4C" region="-33 37 -38" universe="5"/>
+  <cell id="35" material="4" name="B4C周围He气隙" region="33 -31 37 -38" universe="5"/>
+  <cell id="36" material="3" name="上石墨" region="-31 38 -39" universe="5"/>
+  <cell id="37" material="3" name="下石墨" region="-31 35 -36" universe="5"/>
+  <cell id="38" material="5" name="包壳侧" region="31 -32 35 -39" universe="5"/>
+  <cell id="39" material="5" name="包壳上" region="-32 39 -40" universe="5"/>
+  <cell id="40" material="5" name="包壳下" region="-32 34 -35" universe="5"/>
+  <cell id="41" material="6" name="外侧水" region="32 | -34 | 40" universe="5"/>
+  <cell id="42" material="8" name="B4C芯" region="-41 46 -47" universe="6"/>
+  <cell id="43" material="9" name="Air侧" region="41 -42 46 -47" universe="6"/>
+  <cell id="44" material="9" name="Air上" region="-42 47 -48" universe="6"/>
+  <cell id="45" material="9" name="Air下" region="-42 45 -46" universe="6"/>
+  <cell id="46" material="5" name="包壳侧" region="42 -43 45 -48" universe="6"/>
+  <cell id="47" material="5" name="包壳顶部" region="-43 48 -49" universe="6"/>
+  <cell id="48" material="5" name="包壳底部" region="-43 44 -45" universe="6"/>
+  <cell id="49" material="6" name="外侧水" region="43 | -44 | 49" universe="6"/>
+  <cell fill="5" id="50" name="A1 Rod" region="-50" translation="0 0 39" universe="7"/>
+  <cell fill="5" id="51" name="A2 Rod" region="-50" translation="0 0 39" universe="8"/>
+  <cell fill="5" id="52" name="B1 Rod" region="-50" translation="0 0 10" universe="9"/>
+  <cell fill="5" id="53" name="B2 Rod" region="-50" translation="0 0 10" universe="10"/>
+  <cell fill="5" id="54" name="D Rod" region="-50" translation="0 0 15" universe="11"/>
+  <cell fill="6" id="55" name="M Rod" region="-50" translation="0 0 0" universe="12"/>
+  <cell id="56" material="12" name="中子源" region="-51 57 -58" universe="13"/>
+  <cell id="57" material="5" name="源外包装侧" region="51 -52 57 -58" universe="13"/>
+  <cell id="58" material="5" name="源外包装上" region="-52 58 -59" universe="13"/>
+  <cell id="59" material="5" name="源外包装下" region="-52 56 -57" universe="13"/>
+  <cell id="60" material="9" name="Air上" region="-52 59 -60" universe="13"/>
+  <cell id="61" material="9" name="Air下" region="-52 55 -56" universe="13"/>
+  <cell id="62" material="5" name="包壳侧" region="52 -53 55 -60" universe="13"/>
+  <cell id="63" material="5" name="包壳顶部" region="-53 60 -61" universe="13"/>
+  <cell id="64" material="5" name="包壳底部" region="-53 54 -55" universe="13"/>
+  <cell id="65" material="6" name="外侧水" region="53 | -54 | 61" universe="13"/>
+  <cell id="66" material="9" name="管内空气" region="-62 64 -65" universe="14"/>
+  <cell id="67" material="5" name="管" region="62 -63 64 -65" universe="14"/>
+  <cell id="68" material="6" name="外侧水" region="63 | -64 | 65" universe="14"/>
+  <cell id="83" material="5" name="外部包壳" region="81 -82 84 -90" universe="18"/>
+  <cell id="84" material="5" name="上部包壳" region="-82 90 -91" universe="18"/>
+  <cell id="85" material="5" name="下部包壳" region="-82 83 -84" universe="18"/>
+  <cell id="86" material="9" name="上部Air" region="-79 88 -90" universe="18"/>
+  <cell id="87" material="9" name="下部Air" region="-79 86 -87" universe="18"/>
+  <cell id="88" material="9" name="盖" region="-79 87 -88" universe="18"/>
+  <cell id="89" material="14" name="Cd包层底" region="-80 85 -86" universe="18"/>
+  <cell id="90" material="14" name="Cd包层side" region="79 -80 86 -87" universe="18"/>
+  <cell id="91" material="14" name="Cd上包层" region="79 -81 87 -89" universe="18"/>
+  <cell id="92" material="16" name="燃料底" region="-81 84 -85" universe="18" volume="9.62112750161874"/>
+  <cell id="93" material="16" name="燃料side" region="80 -81 85 -87" universe="18" volume="7.103926387929913"/>
+  <cell id="94" material="5" name="Al上包层" region="79 -81 89 -90" universe="18"/>
+  <cell id="95" material="6" name="外侧水" region="91 | -83 | 82" universe="18"/>
+  <cell fill="19" id="96" name="堆芯筒体内" region="-1 8 -11" universe="20"/>
+  <hex_lattice id="19" n_rings="9" orientation="x">
+    <pitch>4.3</pitch>
+    <outer>1</outer>
+    <center>0.0 0.0</center>
+    <universes>
+                1   4   4   4   4   4   4   4   1 
+              4   4   4   4   4   4   4   4   13  4 
+            4   4   2   2   2   2   2   2   4   4   4 
+          4   4   2   2   2   2   2   2   2   4   4   4 
+        4   4   2   2   2   2   2   2   2   2   2   4   4 
+      4   4   2   2   2   10  2   2   8   2   2   2   4   4 
+    4   4   2   2   2   2   2   2   2   2   2   2   2   4   4 
+  4   4   2   2   2   2   1   1   1   1   2   2   2   2   4   4 
+1   4   2   2   2   11  1   1   18  1   1   2   12  2   2   4   1 
+  4   4   2   2   2   2   1   1   1   1   2   2   2   2   4   4 
+    4   4   2   2   2   2   2   2   2   2   2   2   2   4   4 
+      4   4   2   2   2   9   2   2   7   2   2   2   4   4 
+        4   4   2   2   2   2   2   2   2   2   2   4   4 
+          4   4   2   2   2   2   2   2   2   4   4   4 
+            4   4   2   2   2   2   2   2   4   4   4 
+              4   4   4   4   4   4   4   4   4   4 
+                1   4   4   14  4   14  4   4   1 </universes>
+  </hex_lattice>
+  <surface coeffs="0 0 34.9" id="1" name="第1层Al筒内径" type="z-cylinder"/>
+  <surface coeffs="0 0 36.1" id="2" name="第1层Al筒外径" type="z-cylinder"/>
+  <surface coeffs="0 0 36.7" id="3" name="第2层H2O外径" type="z-cylinder"/>
+  <surface coeffs="0 0 37.5" id="4" name="第3层Al筒外径" type="z-cylinder"/>
+  <surface coeffs="0 0 40.0" id="5" name="第4层Pb外径" type="z-cylinder"/>
+  <surface coeffs="0 0 40.8" id="6" name="第5层Al外径" type="z-cylinder"/>
+  <surface boundary="vacuum" coeffs="0 0 60.0" id="7" name="最外围H2O外径" type="z-cylinder"/>
+  <surface boundary="vacuum" coeffs="-100.0" id="8" name="下层水面" type="z-plane"/>
+  <surface coeffs="-35.5" id="9" name="堆芯下平面" type="z-plane"/>
+  <surface coeffs="35.5" id="10" name="堆芯上平面" type="z-plane"/>
+  <surface boundary="vacuum" coeffs="100.0" id="11" name="上层水面" type="z-plane"/>
+  <surface coeffs="0.0 0.0 0.23" id="12" name="Zr芯外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.805" id="13" name="燃料芯外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.81" id="14" name="燃料棒He气外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.86" id="15" name="燃料棒包壳外径" type="z-cylinder"/>
+  <surface coeffs="-30.7" id="16" name="燃料包壳底部" type="z-plane"/>
+  <surface coeffs="-29.25" id="17" name="燃料棒下侧石墨底部" type="z-plane"/>
+  <surface coeffs="-19.5" id="18" name="燃料芯底部" type="z-plane"/>
+  <surface coeffs="19.5" id="19" name="燃料芯顶部" type="z-plane"/>
+  <surface coeffs="29.1" id="20" name="燃料棒上侧石墨顶部" type="z-plane"/>
+  <surface coeffs="30.7" id="21" name="燃料包壳顶部" type="z-plane"/>
+  <surface coeffs="0.0 0.0 1.7" id="22" name="石墨芯外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.75" id="23" name="石墨棒He气外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.85" id="24" name="石墨棒包壳外径" type="z-cylinder"/>
+  <surface coeffs="-30.7" id="25" name="石墨棒包壳底部" type="z-plane"/>
+  <surface coeffs="-29.25" id="26" name="石墨棒下侧石墨底部" type="z-plane"/>
+  <surface coeffs="29.25" id="27" name="石墨棒上侧石墨顶部" type="z-plane"/>
+  <surface coeffs="30.7" id="28" name="石墨棒包壳顶部" type="z-plane"/>
+  <surface coeffs="0.0 0.0 0.23" id="29" name="Zr芯外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.805" id="30" name="燃料芯外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.81" id="31" name="燃料棒He气外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.86" id="32" name="燃料棒包壳外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.785" id="33" name="控制棒B4C芯外径" type="z-cylinder"/>
+  <surface coeffs="-74.75" id="34" name="控制棒包壳底部" type="z-plane"/>
+  <surface coeffs="-72.5" id="35" name="控制棒下侧石墨底部" type="z-plane"/>
+  <surface coeffs="-58.5" id="36" name="控制棒燃料芯底部" type="z-plane"/>
+  <surface coeffs="-19.5" id="37" name="控制棒B4C底部" type="z-plane"/>
+  <surface coeffs="19.5" id="38" name="控制棒上侧石墨底部" type="z-plane"/>
+  <surface coeffs="35.5" id="39" name="控制棒上侧石墨顶部" type="z-plane"/>
+  <surface coeffs="37.75" id="40" name="控制棒包壳顶部" type="z-plane"/>
+  <surface coeffs="0.0 0.0 1.485" id="41" name="脉冲棒B4C芯外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.51" id="42" name="脉冲棒Air外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.56" id="43" name="脉冲棒包壳外径" type="z-cylinder"/>
+  <surface coeffs="-76.05" id="44" name="脉冲棒包壳底部" type="z-plane"/>
+  <surface coeffs="-74.1" id="45" name="脉冲棒下侧空气底部" type="z-plane"/>
+  <surface coeffs="-19.5" id="46" name="脉冲棒B4C芯底部" type="z-plane"/>
+  <surface coeffs="19.5" id="47" name="脉冲棒B4C芯顶部" type="z-plane"/>
+  <surface coeffs="34.5" id="48" name="脉冲棒上侧空气顶部" type="z-plane"/>
+  <surface coeffs="36.45" id="49" name="脉冲棒包壳顶部" type="z-plane"/>
+  <surface coeffs="0.0 0.0 4" id="50" name="控制棒构造单元" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.8" id="51" name="中子源源外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.55" id="52" name="中子源源包装外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.8" id="53" name="中子源包壳外径" type="z-cylinder"/>
+  <surface coeffs="-36.03" id="54" name="中子源包壳底部" type="z-plane"/>
+  <surface coeffs="-29.4" id="55" name="中子源下侧空气底部" type="z-plane"/>
+  <surface coeffs="-2.55" id="56" name="中子源源包装底部" type="z-plane"/>
+  <surface coeffs="-1.35" id="57" name="中子源源底部" type="z-plane"/>
+  <surface coeffs="1.65" id="58" name="中子源源顶部" type="z-plane"/>
+  <surface coeffs="2.55" id="59" name="中子源源包装顶部" type="z-plane"/>
+  <surface coeffs="29.4" id="60" name="中子源上侧空气顶部" type="z-plane"/>
+  <surface coeffs="36.03" id="61" name="中子源包壳顶部" type="z-plane"/>
+  <surface coeffs="0.0 0.0 1.75" id="62" name="跑兔管内径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.8" id="63" name="跑兔管外径" type="z-cylinder"/>
+  <surface coeffs="-36.03" id="64" name="跑兔管底部" type="z-plane"/>
+  <surface coeffs="36.03" id="65" name="跑兔管顶部" type="z-plane"/>
+  <surface coeffs="0.0 0.0 1.33" id="79" name="跑兔管内空气半径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.6" id="80" name="跑兔管内屏蔽层外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.75" id="81" name="跑兔管燃料外径" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 1.8" id="82" name="跑兔管包壳外径" type="z-cylinder"/>
+  <surface coeffs="-6.0" id="83" name="下clad底部" type="z-plane"/>
+  <surface coeffs="-4.0" id="84" name="下clad顶部" type="z-plane"/>
+  <surface coeffs="-3.0" id="85" name="U顶部" type="z-plane"/>
+  <surface coeffs="-2.5" id="86" name="Cd顶部" type="z-plane"/>
+  <surface coeffs="1.5" id="87" name="周围Cd顶部" type="z-plane"/>
+  <surface coeffs="3.5" id="88" name="Cd盖顶部" type="z-plane"/>
+  <surface coeffs="20.0" id="89" name="Cd上包层顶部" type="z-plane"/>
+  <surface coeffs="30.0" id="90" name="上clad底部" type="z-plane"/>
+  <surface coeffs="36.0" id="91" name="上clad顶部" type="z-plane"/>
+</geometry>

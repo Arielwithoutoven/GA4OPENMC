@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plots>
+  <!--整个堆芯xy-->
+  <plot basis="xy" color_by="material" filename="core_xy" id="1" name="整个堆芯xy" type="slice">
+    <pixels>5000 5000</pixels>
+    <origin>0 0 0</origin>
+    <width>80.0 80.0</width>
+    <color id="1" rgb="255 165 0"/>
+    <color id="2" rgb="192 192 192"/>
+    <color id="3" rgb="0 0 0"/>
+    <color id="4" rgb="255 255 255"/>
+    <color id="5" rgb="128 128 126"/>
+    <color id="6" rgb="0 0 255"/>
+    <color id="7" rgb="180 180 180"/>
+    <color id="8" rgb="165 42 42"/>
+    <color id="9" rgb="255 255 255"/>
+    <color id="10" rgb="200 223 227"/>
+    <color id="11" rgb="0 0 0"/>
+    <color id="12" rgb="255 165 0"/>
+    <color id="14" rgb="0 128 0"/>
+    <color id="15" rgb="192 192 192"/>
+    <color id="16" rgb="255 0 0"/>
+  </plot>
+  <!--整个堆芯xz-->
+  <plot basis="xz" color_by="material" filename="core_xz" id="2" name="整个堆芯xz" type="slice">
+    <pixels>8500 14000</pixels>
+    <origin>0 0 -10</origin>
+    <width>85.0 140.0</width>
+    <color id="1" rgb="255 165 0"/>
+    <color id="2" rgb="192 192 192"/>
+    <color id="3" rgb="0 0 0"/>
+    <color id="4" rgb="255 255 255"/>
+    <color id="5" rgb="128 128 126"/>
+    <color id="6" rgb="0 0 255"/>
+    <color id="7" rgb="180 180 180"/>
+    <color id="8" rgb="165 42 42"/>
+    <color id="9" rgb="255 255 255"/>
+    <color id="10" rgb="200 223 227"/>
+    <color id="11" rgb="0 0 0"/>
+    <color id="12" rgb="255 165 0"/>
+    <color id="14" rgb="0 128 0"/>
+    <color id="15" rgb="192 192 192"/>
+    <color id="16" rgb="255 0 0"/>
+  </plot>
+  <!--跑兔腔xz-->
+  <plot basis="xz" color_by="material" filename="rab_xz" id="4" name="跑兔腔xz" type="slice">
+    <pixels>500 5000</pixels>
+    <origin>0 0 15</origin>
+    <width>5.0 50.0</width>
+    <color id="1" rgb="255 165 0"/>
+    <color id="2" rgb="192 192 192"/>
+    <color id="3" rgb="0 0 0"/>
+    <color id="4" rgb="255 255 255"/>
+    <color id="5" rgb="128 128 126"/>
+    <color id="6" rgb="0 0 255"/>
+    <color id="7" rgb="180 180 180"/>
+    <color id="8" rgb="165 42 42"/>
+    <color id="9" rgb="255 255 255"/>
+    <color id="10" rgb="200 223 227"/>
+    <color id="11" rgb="0 0 0"/>
+    <color id="12" rgb="255 165 0"/>
+    <color id="14" rgb="0 128 0"/>
+    <color id="15" rgb="192 192 192"/>
+    <color id="16" rgb="255 0 0"/>
+  </plot>
+  <!--跑兔腔xy-->
+  <plot basis="xy" color_by="material" filename="rab_xy" id="3" name="跑兔腔xy" type="slice">
+    <pixels>2800 2800</pixels>
+    <origin>0 0 0</origin>
+    <width>4.5 4.5</width>
+    <color id="1" rgb="255 165 0"/>
+    <color id="2" rgb="192 192 192"/>
+    <color id="3" rgb="0 0 0"/>
+    <color id="4" rgb="255 255 255"/>
+    <color id="5" rgb="128 128 126"/>
+    <color id="6" rgb="0 0 255"/>
+    <color id="7" rgb="180 180 180"/>
+    <color id="8" rgb="165 42 42"/>
+    <color id="9" rgb="255 255 255"/>
+    <color id="10" rgb="200 223 227"/>
+    <color id="11" rgb="0 0 0"/>
+    <color id="12" rgb="255 165 0"/>
+    <color id="14" rgb="0 128 0"/>
+    <color id="15" rgb="192 192 192"/>
+    <color id="16" rgb="255 0 0"/>
+  </plot>
+</plots>
