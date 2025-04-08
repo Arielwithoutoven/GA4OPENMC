@@ -1,9 +1,8 @@
 import random
 import time
 
-from constants import *
+from GA.constants import *
 from Individual import Individual
-
 
 class GA:
     def __init__(self):
@@ -16,7 +15,7 @@ class GA:
     def initialize(self):
         # 随机生成初始个体
         for _ in range(POPSIZE):
-            r1 = int(random.uniform(*RRANGE[1]))
+            r1 = int(random.uniform(*RANGES[1]))
             r2 = int(random.uniform(r1 + 5, 170))
             r3 = int(175)
             r4 = int(180)
