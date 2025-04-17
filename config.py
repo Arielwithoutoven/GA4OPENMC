@@ -11,12 +11,20 @@ space = openmc.stats.Box(
 )  # spatial sites should only be accepted if they occur in fissionable materials
 source = openmc.IndependentSource(space=space, particle="neutron", strength=1.0)
 
+
+settings_fixed_source = openmc.Settings(
+    run_mode="fixed source"
+    particles=100000,
+    batches=250,
+    source=source,
+)
+
 settings = openmc.Settings(
     run_mode="eigenvalue",
     batches=250,
-    particles=100000,
+    generations_per_batch = 10,
+    particles=20000,
     inactive=50,
-    source=source,
 )
 
 
