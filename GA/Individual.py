@@ -1,5 +1,6 @@
 """r1~r4, z1~z9, to make them change but still in order"""
 
+import os
 import random
 import sys
 from functools import wraps
@@ -7,11 +8,11 @@ from functools import wraps
 import matplotlib.pyplot as plt
 import numpy as np
 
+from config import settings, update_tallies
 from GA.constants import *
-from GA.utils import *
 from geometry import update_geometry
 from materials import materials
-from config import update_tallies, settings
+from utils import *
 
 # print(sys.path) #只有当前文件所在目录的绝对路径和环境变量
 # sys.path.append("..")  # 在GA文件夹使用python执行本文件调用Py内模块方法时可用
@@ -33,9 +34,11 @@ class Individual:
         self.distans = 0.0
         self.survive = True
         self.path = os.getcwd() + os.sep + "Individuals" + os.sep + timestr()
-        self.geometry, self.cell = update_geometry(self.p)
+        self.geometry, self.cell, self.dosage = update_geometry(self.p)
         self.tallies = update_tallies(self.cell)
         os.makedirs(self.path)
+        with open(self.path+os.sep+"dosage.txt", "a") as f:
+            f.write(self.dosage)
 
     def survive_check(func):
         @wraps(func)
@@ -157,7 +160,7 @@ class Individual:
 
     def run_model(self):
         model = openmc.Model(self.geometry, materials, settings, self.tallies)
-        model.run(cwd=self.path)
+        model.run(cwd=self.path, mpi_args=["-output-filename", "output.log"])
 
 if __name__ == "__main__":
     a = Individual([133, 160, 175, 180, -600, -400, -300, -250, 150, 350, 2000, 3000, 3600])

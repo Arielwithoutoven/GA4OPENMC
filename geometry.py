@@ -1,6 +1,8 @@
-import openmc
-from materials import *
 from math import pi
+
+import openmc
+import json
+from materials import *
 
 ############################################################################
 # 堆芯外围曲面
@@ -633,19 +635,19 @@ def update_geometry(p=[170, 180, 205, 210, -700, -300, -275, -265, 200, 250, 220
 
     n_r_bottom_fuel.volume = pi * (p[2] / 100) * (p[2] / 100) * (p[6] / 100 - p[5] / 100)
     n_r_side_fuel.volume = pi * ((p[2] / 100) * (p[2] / 100) - (p[1] / 100) * (p[1] / 100)) * (p[8] / 100 - p[6] / 100)
+
     # Cd体积 =pi*(p[1]/100)*(p[1]/100)*(p[7]/100-p[6]/100)+pi*((p[1]/100)*(p[1]/100)-(p[0]/100)*(p[0]/100))*(p[8]/100-p[7]/100)
-    print("UO2 Volume:", n_r_bottom_fuel.volume + n_r_side_fuel.volume, "cm3")
-    print("UO2 Mass:", (n_r_bottom_fuel.volume + n_r_side_fuel.volume) * UO2.density, "g")
+
+    # UO2 用量计算
     # TODO More Exact
-    mm = 235 * 0.1975 + 238 * (1 - 0.1975)
-    print(
-        "U238 Mass:",
-        (n_r_bottom_fuel.volume + n_r_side_fuel.volume) * UO2.density * mm / (mm + 32) * (1 - 0.1975),
-    )
-    print(
-        "U235 Mass:",
-        (n_r_bottom_fuel.volume + n_r_side_fuel.volume) * UO2.density * mm / (mm + 32) * 0.1975,
-    )
+    U235_ratio = 235 * 0.1975 + 238 * (1 - 0.1975)
+
+    U_dosage = {
+        "UO2": (n_r_bottom_fuel.volume + n_r_side_fuel.volume) * UO2.density,
+        "U238": (n_r_bottom_fuel.volume + n_r_side_fuel.volume) * UO2.density * U235_ratio / (U235_ratio + 32) * (1 - 0.1975),
+        "U235": (n_r_bottom_fuel.volume + n_r_side_fuel.volume) * UO2.density * U235_ratio / (U235_ratio + 32) * 0.1975,
+    }
+    U_dosage = json.dumps(U_dosage)
 
     # 新中央跑兔Universe
     newRabbitUni = openmc.Universe(
@@ -724,7 +726,7 @@ def update_geometry(p=[170, 180, 205, 210, -700, -300, -275, -265, 200, 250, 220
 
     allUni = openmc.Universe(cells=[ins_reactor, fir_Al, sec_H2O, thi_Al, fou_Pb, fif_Al, six_H2O])
     geo = openmc.Geometry(allUni)
-    return geo, n_r_lower_Air
+    return geo, n_r_lower_Air, U_dosage
 
 
 # update_geometry([165, 180, 205, 210, -700, -300, -275, -265, 200, 250, 2200, 2940, 3600])

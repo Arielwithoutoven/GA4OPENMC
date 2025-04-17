@@ -1,8 +1,10 @@
 import random
 import time
 
-from GA.constants import *
 from Individual import Individual
+
+from GA.constants import *
+
 
 class GA:
     def __init__(self):

@@ -1,7 +1,5 @@
-import openmc
-
-from geometry import *
 import numpy as np
+import openmc
 
 
 space = openmc.stats.Box(
@@ -13,7 +11,7 @@ source = openmc.IndependentSource(space=space, particle="neutron", strength=1.0)
 
 
 settings_fixed_source = openmc.Settings(
-    run_mode="fixed source"
+    run_mode="fixed source",
     particles=100000,
     batches=250,
     source=source,

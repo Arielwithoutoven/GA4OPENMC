@@ -1,4 +1,5 @@
 import openmc
+
 openmc.config['cross_sections'] = '/home/cir/NuclearData/mcnp_endfb71/cross_sections.xml'
 UHZr_elements = {
     "U": {"percent": 0.1175, "enrichment": 19},

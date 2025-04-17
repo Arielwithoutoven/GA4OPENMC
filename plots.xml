@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <plots>
   <!--整个堆芯xy-->
-  <plot basis="xy" color_by="material" filename="core_xy" id="1" name="整个堆芯xy" type="slice">
+  <plot basis="xy" color_by="material" filename="./pics/core_xy" id="1" name="整个堆芯xy" type="slice">
     <pixels>5000 5000</pixels>
     <origin>0 0 0</origin>
     <width>80.0 80.0</width>
@@ -22,7 +22,7 @@
     <color id="16" rgb="128 0 128"/>
   </plot>
   <!--整个堆芯xz-->
-  <plot basis="xz" color_by="material" filename="core_xz" id="2" name="整个堆芯xz" type="slice">
+  <plot basis="xz" color_by="material" filename="./pics/core_xz" id="2" name="整个堆芯xz" type="slice">
     <pixels>8500 14000</pixels>
     <origin>0 0 -10</origin>
     <width>85.0 140.0</width>
@@ -43,7 +43,7 @@
     <color id="16" rgb="128 0 128"/>
   </plot>
   <!--跑兔腔xz-->
-  <plot basis="xz" color_by="material" filename="rab_xz" id="4" name="跑兔腔xz" type="slice">
+  <plot basis="xz" color_by="material" filename="./pics/rab_xz" id="4" name="跑兔腔xz" type="slice">
     <pixels>500 5000</pixels>
     <origin>0 0 15</origin>
     <width>5.0 50.0</width>
@@ -64,7 +64,7 @@
     <color id="16" rgb="128 0 128"/>
   </plot>
   <!--跑兔腔xy-->
-  <plot basis="xy" color_by="material" filename="rab_xy" id="3" name="跑兔腔xy" type="slice">
+  <plot basis="xy" color_by="material" filename="./pics/rab_xy" id="3" name="跑兔腔xy" type="slice">
     <pixels>2800 2800</pixels>
     <origin>0 0 0</origin>
     <width>4.5 4.5</width>
