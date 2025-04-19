@@ -2,25 +2,17 @@
 
 import os
 import random
-import sys
 from functools import wraps
 
-import matplotlib.pyplot as plt
 import numpy as np
+import openmc
 
+import geometry  # 按照执行python时的路径查找
 from config import settings, update_tallies
 from GA.constants import *
 from geometry import update_geometry
 from materials import materials
-from utils import *
-
-# print(sys.path) #只有当前文件所在目录的绝对路径和环境变量
-# sys.path.append("..")  # 在GA文件夹使用python执行本文件调用Py内模块方法时可用
-# sys.path.append(".")  # 在Py文件夹使用python执行本文件调用Py内模块方法时可用
-# isort: split
-import geometry  # 按照执行python时的路径查找
-
-# from MultiProcess import Process, Pool
+from utils import json_serializer, timestr
 
 cwd = os.getcwd()
 
@@ -37,8 +29,8 @@ class Individual:
         self.geometry, self.cell, self.dosage = update_geometry(self.p)
         self.tallies = update_tallies(self.cell)
         os.makedirs(self.path)
-        with open(self.path+os.sep+"dosage.txt", "a") as f:
-            f.write(self.dosage)
+        json_serializer(self.dosage, self.path + os.sep + "dosage.txt")
+        json_serializer(self.p, self.path + os.sep + "rab_param.txt")
 
     def survive_check(func):
         @wraps(func)
@@ -160,7 +152,9 @@ class Individual:
 
     def run_model(self):
         model = openmc.Model(self.geometry, materials, settings, self.tallies)
-        model.run(cwd=self.path, mpi_args=["-output-filename", "output.log"])
+        # model.run(cwd=self.path, mpi_args=["-output-filename", "output.log"])
+        model.run(cwd=self.path)
+
 
 if __name__ == "__main__":
     a = Individual([133, 160, 175, 180, -600, -400, -300, -250, 150, 350, 2000, 3000, 3600])

@@ -1,7 +1,8 @@
+import json
 from math import pi
 
 import openmc
-import json
+
 from materials import *
 
 ############################################################################
@@ -541,7 +542,6 @@ r_H2O_around = openmc.Cell(
 
 # 原跑兔Universe
 runRabbitUni = openmc.Universe(name="跑兔管", cells=[r_Air, r_SS, r_H2O_around])
-
 
 ############################################################################
 # 新中央跑兔栅元曲面
