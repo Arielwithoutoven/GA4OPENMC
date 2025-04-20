@@ -88,9 +88,8 @@ def parse_statepoint(pathQueue):
 
 
 if __name__ == "__main__":
-    testSize = 5
+    testSize = 30
     cpuNum = mp.cpu_count()  # 8
-    # print(f"You have {cpuNum} cpu(s) for python")
 
     with Manager() as manager:
         paramQueue, pathQueue = manager.Queue(), manager.Queue()
@@ -108,4 +107,5 @@ if __name__ == "__main__":
         producer.join()
         parser.join()
 
-    print(f"{testSize} data(s) has been generated..")
+    print(f"\n\nYou have {cpuNum} cpu(s) for this script")
+    print(f"{testSize} data(s) has been generated")
