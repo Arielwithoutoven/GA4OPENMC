@@ -88,7 +88,7 @@ def parse_statepoint(pathQueue):
 
 
 if __name__ == "__main__":
-    testSize = 30
+    testSize = 6
     cpuNum = mp.cpu_count()  # 8
 
     with Manager() as manager:
